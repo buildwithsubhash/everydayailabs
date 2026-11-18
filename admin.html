@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin · Everyday AI Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="panel">
+  <header class="top">
+    <h1>Products</h1>
+    <div class="actions">
+      <a class="btn ghost small" href="index.html?preview=1" target="_blank" rel="noopener">Preview draft</a>
+      <button id="publish" class="btn small" type="button">Publish to live site</button>
+    </div>
+  </header>
+  <p class="note">Add or edit products below, then click <strong>Publish</strong>. The admin saves <code>products.json</code> to your GitHub repo and GitHub Pages updates the live site in 1 to 2 minutes. <span id="dirty" class="dirty" hidden>You have unpublished changes.</span></p>
+  <p id="status" class="status" role="status"></p>
+
+  <details id="gh" class="box gh">
+    <summary>GitHub connection</summary>
+    <p class="muted small-t">Create a fine-grained token at GitHub &rarr; Settings &rarr; Developer settings &rarr; Personal access tokens. Limit it to this one repository with <strong>Contents: Read and write</strong>. Only someone with this token can publish.</p>
+    <div class="two">
+      <label>GitHub username <input id="ghOwner" autocomplete="off" placeholder="yourname"></label>
+      <label>Repository <input id="ghRepo" autocomplete="off" placeholder="everyday-ai-labs"></label>
+    </div>
+    <div class="two">
+      <label>Branch <input id="ghBranch" autocomplete="off" value="main"></label>
+      <label>Access token <input id="ghToken" type="password" autocomplete="off" placeholder="github_pat_..."></label>
+    </div>
+    <label class="check"><input id="ghRemember" type="checkbox"> Remember token on this device</label>
+  </details>
+
+  <div class="cols">
+    <form id="form" class="box">
+      <h2 id="formTitle">Add product</h2>
+      <input type="hidden" id="id">
+      <label>Title <input id="title" required maxlength="80"></label>
+      <label>Description <textarea id="description" rows="3" maxlength="240" required></textarea></label>
+      <div class="two">
+        <label>Price <input id="price" placeholder="$12" required maxlength="12"></label>
+        <label>Category <input id="category" placeholder="Prompts" maxlength="30"></label>
+      </div>
+      <label>Gumroad product link <input id="url" type="url" placeholder="https://yourname.gumroad.com/l/product" required></label>
+      <div class="two">
+        <label>Badge (optional) <input id="badge" placeholder="Best seller" maxlength="20"></label>
+        <label class="check"><input id="featured" type="checkbox"> Feature this product</label>
+      </div>
+      <label>Image URL (optional) <input id="image" type="url" placeholder="https://..."></label>
+      <p id="formErr" class="err" role="alert"></p>
+      <div class="actions">
+        <button class="btn" type="submit" id="save">Add product</button>
+        <button class="btn ghost" type="button" id="cancel" hidden>Cancel edit</button>
+      </div>
+    </form>
+
+    <div class="box">
+      <h2>Listed products <span id="count" class="muted"></span></h2>
+      <ul id="list" class="list"></ul>
+      <div class="actions">
+        <button id="download" class="btn ghost small" type="button">Download backup</button>
+        <label class="btn ghost small">Import file<input id="import" type="file" accept="application/json" hidden></label>
+        <button id="reset" class="btn ghost small danger" type="button">Discard draft</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>

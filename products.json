@@ -1,0 +1,5 @@
+[
+  {"id":"p1","title":"Daily Prompt Pack","description":"120 tested prompts for email, planning, research and writing. Paste, tweak, done.","price":"$12","category":"Prompts","url":"https://gumroad.com/","image":"","badge":"Best seller","featured":true},
+  {"id":"p2","title":"Notion AI Workspace","description":"A ready-made Notion setup that turns notes and tasks into weekly plans with AI.","price":"$19","category":"Templates","url":"https://gumroad.com/","image":"","badge":"New","featured":false},
+  {"id":"p3","title":"Automate Your Inbox","description":"A short video course on using AI to sort, summarise and reply to email in minutes.","price":"$29","category":"Courses","url":"https://gumroad.com/","image":"","badge":"","featured":false}
+]
