@@ -1,38 +1,5 @@
 [
   {
-    "id": "p1",
-    "title": "Daily Prompt Pack",
-    "description": "120 tested prompts for email, planning, research and writing. Paste, tweak, done.",
-    "price": "$12",
-    "category": "Prompts",
-    "url": "https://gumroad.com/",
-    "image": "",
-    "badge": "Best seller",
-    "featured": true
-  },
-  {
-    "id": "p2",
-    "title": "Notion AI Workspace",
-    "description": "A ready-made Notion setup that turns notes and tasks into weekly plans with AI.",
-    "price": "$19",
-    "category": "Templates",
-    "url": "https://gumroad.com/",
-    "image": "",
-    "badge": "New",
-    "featured": false
-  },
-  {
-    "id": "p3",
-    "title": "Automate Your Inbox",
-    "description": "A short video course on using AI to sort, summarise and reply to email in minutes.",
-    "price": "$29",
-    "category": "Courses",
-    "url": "https://gumroad.com/",
-    "image": "",
-    "badge": "",
-    "featured": false
-  },
-  {
     "id": "p1795025312290",
     "title": "Cold Outreach Bundle v1.0",
     "description": "Is your cold outreach falling on deaf ears?\n\nThe average B2B decision-maker receives over 100 cold emails a day. Most are generic, robotic, and instantly deleted. To win, you don't need more emails—you need smarter ones.",
@@ -42,5 +9,27 @@
     "image": "https://public-files.gumroad.com/98niyhkful0i1o7k5oc2yd01l6oc",
     "badge": "",
     "featured": true
+  },
+  {
+    "id": "p1795452670639",
+    "title": "The Pinterest Digital Product Business Toolkit",
+    "description": "The Pinterest Product Playbook is a beginner-friendly resource designed to help you understand Pinterest marketing, discover profitable niches, research keywords, create engaging Pin.",
+    "price": "$9.99",
+    "category": "Bundle",
+    "url": "https://everydayailabs.gumroad.com/l/PinterestDigitalProduct",
+    "image": "https://public-files.gumroad.com/5z0uvczy8izva56h3nybsyhbsh5l",
+    "badge": "Best Seller",
+    "featured": true
+  },
+  {
+    "id": "p1795452841700",
+    "title": "AI Automation SOP Bundle",
+    "description": "AI Automation SOP Bundle is a premium business systems handbook designed to help entrepreneurs, freelancers, agencies, consultants, and creators automate repetitive tasks, streamline operations, and scale faster using AI.",
+    "price": "$19.99",
+    "category": "Bundle",
+    "url": "https://everydayailabs.gumroad.com/l/AIAutomationSOPBundle?wanted=true",
+    "image": "https://public-files.gumroad.com/iu1uyszkyd9hfwtgjmks3yibpn0g",
+    "badge": "Best Seller",
+    "featured": false
   }
 ]
